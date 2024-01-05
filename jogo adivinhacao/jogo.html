@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Jogo de Adivinhação</title>
+  <link rel="stylesheet" href="jogo.css">
+</head>
+<body>
+    <div class="video-container">
+        <video autoplay muted loop id="video-bg">
+          <source src="videoplayback.mp4" type="video/mp4">
+        </video>
+        <div class="content">
+  <h1>Jogo de Adivinhação</h1>
+  <p>Tente adivinhar o número entre 1 e 50:</p>
+  <input type="number" id="guess" min="1" max="50">
+  <button onclick="checkGuess()">Adivinhar</button>
+  <p id="message"></p>
+</div>
+
+  <script src="jogo.js"></script>
+</body>
+</html>
